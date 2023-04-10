@@ -16,8 +16,8 @@ provider "jenkins" {
 
 
 data "aws_ssm_parameter" "jenkins_user" {
-  name = jenkins.user
+  name = "jenkins.user"
 }
 data "aws_ssm_parameter" "jenkins_pass" {
-  name  = jenkins.pass
+  name  = "jenkins.pass"
 }
