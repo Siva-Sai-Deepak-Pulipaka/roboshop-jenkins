@@ -11,12 +11,13 @@ resource "jenkins_job" "job" {
   folder   = "/job/${lookup(element(var.jobs, count.index), "folder", null)}"  #if /job is not mentioned then it everytime getting deleted
   template = templatefile("${path.module}/singleBranch-pipeline.xml", {
   repo_url = lookup(element(var.jobs, count.index), "repo_url", null)
+  token_name = lookup(element(var.jobs, count.index), "token_name", null)
   })
 
 # not to bother about any changes in template
-lifecycle {
-    ignore_changes = [ template ]    
-}
+# lifecycle {
+#     ignore_changes = [ template ]    
+# }
 
 }
 
