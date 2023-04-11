@@ -13,7 +13,7 @@
           <printPostContent>false</printPostContent>
           <printContributedVariables>false</printContributedVariables>
           <causeString>Generic Cause</causeString>
-          <token>${token_name}</token>
+          <token>${name}</token>
           <tokenCredentialId></tokenCredentialId>
           <silentResponse>false</silentResponse>
           <overrideQuietPeriod>false</overrideQuietPeriod>
