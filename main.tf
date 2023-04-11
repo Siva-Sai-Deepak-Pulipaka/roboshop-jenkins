@@ -9,8 +9,12 @@ resource "jenkins_job" "job" {
   count    = length(var.jobs)
   name     = lookup(element(var.jobs, count.index), "name", null)
   folder   = "/job/${lookup(element(var.jobs, count.index), "folder", null)}"  #if /job is not mentioned then it everytime getting deleted
+  
+  
   template = templatefile("${path.module}/singleBranch-pipeline.xml", {
+  
   repo_url = lookup(element(var.jobs, count.index), "repo_url", null)
+  name     = lookup(element(var.jobs, count.index), "name", null)
   })
 
 # not to bother about any changes in template
