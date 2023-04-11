@@ -18,9 +18,9 @@ resource "jenkins_job" "job" {
   })
 
 # not to bother about any changes in template
-# lifecycle {
-#     ignore_changes = [ template ]    
-# }
+lifecycle {
+    ignore_changes = [ template ]    
+}
 
 }
 
