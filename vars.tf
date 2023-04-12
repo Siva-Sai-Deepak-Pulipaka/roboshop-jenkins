@@ -19,3 +19,7 @@ variable "sp-jobs" {
     { name = "roboshop", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/roboshop-terraform", folder = "Infra" }
   ]
 }
+
+variable "force" {
+  default = false
+}
