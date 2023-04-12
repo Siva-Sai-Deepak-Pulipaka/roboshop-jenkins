@@ -1,9 +1,9 @@
 variable "folders" {
     default = ["Infra", "CI-Pipeline"]
 } 
-variable "jobs" {
+variable "mp-jobs" {
   default = [
-    { name = "roboshop", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/roboshop-terraform", folder = "Infra" },
+    
     { name = "frontend", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/frontend", folder = "CI-Pipeline" },
     { name = "catalogue", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/catalogue", folder = "CI-Pipeline" },
     { name = "cart", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/cart", folder = "CI-Pipeline" },
@@ -14,3 +14,8 @@ variable "jobs" {
     ]
 }
  
+variable "sp-jobs" {
+  default = [
+    { name = "roboshop", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/roboshop-terraform", folder = "Infra" }
+  ]
+}
