@@ -16,6 +16,7 @@ resource "jenkins_job" "sp-job" {
   
   repo_url = lookup(element(var.sp-jobs, count.index), "repo_url", null)
   name     = lookup(element(var.sp-jobs, count.index), "name", null)
+  filename = lookup(element(var.sp-jobs, count.index), "filename", null)
   })
 
 # not to bother about any changes in template

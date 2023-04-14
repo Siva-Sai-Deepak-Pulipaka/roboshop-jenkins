@@ -16,7 +16,8 @@ variable "mp-jobs" {
  
 variable "sp-jobs" {
   default = [
-    { name = "roboshop", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/roboshop-terraform", folder = "Infra" }
+    { name = "roboshop", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/roboshop-terraform", folder = "Infra", filename = "Jenkinsfile" },
+    { name = "AppDeployment", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/roboshop-ansible", folder = "Infra", filename = "Jenkinsfile-deployment" }
   ]
 }
 
