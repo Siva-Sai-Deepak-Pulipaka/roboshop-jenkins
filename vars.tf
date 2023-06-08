@@ -10,7 +10,8 @@ variable "mp-jobs" {
     { name = "shipping", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/shipping", folder = "CI-Pipeline" },
     { name = "payment", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/payment", folder = "CI-Pipeline" },
     { name = "dispatch", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/dispatch", folder = "CI-Pipeline" },
-    { name = "user", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/user", folder = "CI-Pipeline" }
+    { name = "user", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/user", folder = "CI-Pipeline" },
+    { name = "aws-ssm-param-store-initcont", repo_url = "https://github.com/Siva-Sai-Deepak-Pulipaka/aws-ssm-param-store-initcont", folder = "CI-Pipeline" }
     ]
 }
  
